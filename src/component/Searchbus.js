@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from './Header'
 
 const Searchbus = () => {
     var [busroute,setBusroute]=useState("")
@@ -11,6 +12,7 @@ const Searchbus = () => {
     
   return (
     <div>
+        <Header/>
 
 <div className="container">
     <div className="row">
