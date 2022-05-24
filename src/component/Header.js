@@ -22,6 +22,10 @@ const Header = () => {
             <Link to="/search" className="nav-link">Searchbus</Link>
           
         </li>
+        <li className="nav-item">
+            <Link to="/view" className="nav-link">View</Link>
+          
+        </li>
         
       </ul>
     </div>
