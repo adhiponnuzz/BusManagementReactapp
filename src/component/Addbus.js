@@ -9,9 +9,25 @@ const Addbus = () => {
     var [ownername,setOwnername]=useState("")
     var [contactno,setContactno]=useState("")
     const subData=()=>{
-        const data={"Route":route,"Busname":busname,"Regno":regno,"Ownername":ownername,"contactno":contactno}
+        const data={"route":route,"busname":busname,"regno":regno,"ownername":ownername,"contactno":contactno}
         console.log(data)
 
+        axios.post("http://localhost:4000/api/busadd",data).then((response)=>{
+            console.log(response.data)
+            if(response.data.status=="success")
+            {
+                alert("successfully added")
+            }
+            else
+            {
+
+                alert("failed to added")
+            }
+
+
+
+
+        })
         
     }
     
